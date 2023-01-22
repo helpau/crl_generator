@@ -19,8 +19,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: coverage.py badge
-      uses: tj-actions/coverage-badge-py@v1.8
 
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
@@ -40,3 +38,5 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: coverage.py badge
+      uses: tj-actions/coverage-badge-py@v1.8
